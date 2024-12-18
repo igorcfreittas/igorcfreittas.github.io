@@ -3,69 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igor Freitas | Portfolio</title>
-
-    <script src="./src/js/main.js"></script>
-    <link rel="stylesheet" href="./src/css/style.css">
-
+    <title>Professional Resume - Software Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .resume-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .job-title {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .company-name {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .job-period {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .responsibilities {
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+        .tech-stack {
+            background-color: #f1f4f8;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+        }
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navmenu left">
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Education</a></li>
-        </ul>        
-    </nav>
+    <div class="container resume-container">
+        <div class="header">
+            <h1>Professional Resume</h1>
+            <p>Senior Software Engineer with expertise in Full Stack Development</p>
+        </div>
 
-    <section class="home main">
-        <div class="home-content">
-            <h3>Oi!</h3>
-
-            <h1>Meu nome é <span>Igor<br></span></h1>
-            <h2>Engenheiro de Software Full Stack</h2>
-
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, but also the leap into 
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        
-            <div class="socials">
-                <ul>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
+        <div class="experience">
+            <h2 class="job-title">WASD Digital Media</h2>
+            <div class="job-details">
+                <p class="company-name">Senior Software Engineer</p>
+                <p class="job-period">Sep 2024 – Present (4 months) | Minas Gerais, Brazil (Remote)</p>
             </div>
-        </div>
 
-        <div class="img-box">
-            <img src="./resources/img/perfil.jpg" alt="perfil">
-        </div>
-    </section>
+            <div class="experience">
+                <h2 class="job-title">netLex</h2>
+                <div class="job-details">
+                    <p class="company-name">Senior Full Stack Software Engineer</p>
+                    <p class="job-period">Oct 2022 – Sep 2024 (2 years) | Belo Horizonte, Brazil (Remote)</p>
+                    <div class="responsibilities">
+                        <ul>
+                            <li>Developed and maintained core business system functionalities</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> PHP (Laravel), JavaScript (Angular), MySQL + ORM, Python, C++, Graylog, Elasticsearch, Git, CI/CD, GitLab Pipelines, Docker
+                    </div>
+                </div>
+            </div>
 
-    <section class="skills">
+            <div class="experience">
+                <h2 class="job-title">Tray E-commerce Platform</h2>
+                <div class="job-details">
+                    <p class="company-name">Senior Full Stack Software Engineer</p>
+                    <p class="job-period">Apr 2020 – Oct 2022 (2 years and 7 months) | Marília, São Paulo, Brazil (Remote)</p>
+                    <div class="responsibilities">
+                        <ul>
+                            <li>Implemented the PIX payment method on the platform</li>
+                            <li>Acted as a tech lead, responsible for training and onboarding new developers</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> PHP, JavaScript, Agile methodologies
+                    </div>
+                </div>
 
-        <div id="skills-container">
+                <div class="job-details">
+                    <p class="company-name">Mid-level Software Engineer</p>
+                    <p class="job-period">Feb 2019 – Apr 2020 (1 year and 3 months) | Marília, São Paulo, Brazil (On-site)</p>
+                    <div class="responsibilities">
+                        <ul>
+                            <li>Developed and maintained features for shopping cart and checkout systems</li>
+                            <li>Integrated APIs and continuously improved administrative and customer-facing tools</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Docker, PHP (Laravel and CakePHP), JavaScript (Knockout and Vue), MySQL, Git, GitLab, WebServices/API (JSON/XML), Unit Testing (TDD)
+                    </div>
+                </div>
+            </div>
 
-            <h1>Experiências medidas em anos!</h1>
-            
-            <div class="skill-level">
-                <span>PHP</span>
- 
-                <div class="dot">
-                    <span class="years-numbers">1</span>
+            <div class="experience">
+                <h2 class="job-title">ITeam</h2>
+                <div class="job-details">
+                    <p class="company-name">Junior SAP ABAP Consultant</p>
+                    <p class="job-period">Oct 2018 – Feb 2019 (5 months) | Lins, Brazil</p>
+                    <div class="responsibilities">
+                        <ul>
+                            <li>Developed and maintained reports for the SAP ERP system</li>
+                            <li>Collaborated on development projects, integrating and tailoring solutions to user requirements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience">
+                <h2 class="job-title">SonniTech</h2>
+                <div class="job-details">
+                    <p class="company-name">Junior Software Engineer</p>
+                    <p class="job-period">Jan 2017 – Dec 2018 (2 years) | Lins, Brazil</p>
+                    <div class="responsibilities">
+                        <ul>
+                            <li>Developed essential APIs for the "Cidade Fácil" application</li>
+                            <li>Maintained the application and created a web dashboard for fleet management</li>
+                            <li>Integrated Google APIs (Maps, Area Control, Street View)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> PHP (Laravel), JavaScript (JQuery), HTML, CSS, MySQL
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <!-- Bootstrap JS (optional, for future interactivity) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
